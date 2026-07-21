@@ -12,16 +12,16 @@ export const MENU_ITEMS = [
   {
     title: "دریافت مشاوره",
     icon: BookIcon,
-    to: "/consultation",
+    to: "/",
   },
   {
     title: "سوالات متداول",
     icon: QuestionIcon,
-    to: "/faq",
+    to: "/",
   },
   {
     title: "تماس با ما",
     icon: PhoneIcon,
-    to: "/contact",
+    to: "/",
   },
 ];

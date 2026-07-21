@@ -26,18 +26,18 @@ export const FOOTER_LINKS = [
   {
     title: "دسترسی سریع",
     items: [
-      { label: "درباره ما", href: "/about" },
-      { label: "بلاگ", href: "/blog" },
-      { label: "تماس با ما", href: "/contact" },
-      { label: "خدمات پس از فروش", href: "/support" },
+      { label: "درباره ما", href: "/" },
+      { label: "بلاگ", href: "/" },
+      { label: "تماس با ما", href: "/" },
+      { label: "خدمات پس از فروش", href: "/" },
     ],
   },
   {
     title: "راهنمای سایت",
     items: [
-      { label: "قوانین و مقررات", href: "/rules" },
-      { label: "دریافت مشاوره", href: "/consultation" },
-      { label: "انتقادات و پیشنهادات", href: "/feedback" },
+      { label: "قوانین و مقررات", href: "/" },
+      { label: "دریافت مشاوره", href: "/" },
+      { label: "انتقادات و پیشنهادات", href: "/" },
     ],
   },
 ];
