@@ -14,6 +14,7 @@ const emit = defineEmits<{
   <label class="flex items-center gap-2 cursor-pointer">
     <input
       type="radio"
+      :value="value"
       :checked="modelValue === value"
       class="sr-only"
       @change="emit('update:modelValue', value)"
@@ -29,7 +30,10 @@ const emit = defineEmits<{
       />
     </span>
 
-    <span :class="modelValue === value ? 'text-gray-800' : 'text-gray-500'">
+    <span
+      class="text-xs leading-4 font-medium"
+      :class="modelValue === value ? 'text-gray-800' : 'text-gray-500'"
+    >
       {{ label }}
     </span>
   </label>
