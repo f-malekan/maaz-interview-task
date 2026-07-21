@@ -1,0 +1,4 @@
+<template>
+  <FooterTopPart />
+  <FooterBottomPart />
+</template>

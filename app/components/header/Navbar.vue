@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MENU_ITEMS } from "~/constants";
+import { MENU_ITEMS } from "~/constants/header";
 </script>
 
 <template>
