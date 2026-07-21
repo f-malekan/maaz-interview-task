@@ -1,19 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #E20054;
-    --color-secondary: #0A2A51;
-    --color-gray-50: #E9EDF5;
-    --color-gray-25: #F5F7FA;
-    --color-red-50: #FCE5EE;
-    --color-gray-800: #344456;
-    --color-gray-500: #647E9A;
-    --color-gray-200: #B2C2D6;
-    --color-gray-700: #445A74;
-    --color-dark: #141928;
+  --color-primary: #E20054;
+  --color-secondary: #0A2A51;
+  --color-gray-50: #E9EDF5;
+  --color-gray-25: #F5F7FA;
+  --color-red-50: #FCE5EE;
+  --color-gray-800: #344456;
+  --color-gray-500: #647E9A;
+  --color-gray-200: #B2C2D6;
+  --color-gray-700: #445A74;
+  --color-dark: #141928;
 
 }
 
+@font-face {
+  font-family: "IRANYekan";
+  src: url("~/assets/fonts/iranyekanwebregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("~/assets/fonts/iranyekanwebmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("~/assets/fonts/iranyekanwebbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "IRANYekan", sans-serif;
+  background-color: #E9EDF5;
+}
 
 .container {
   width: 100%;

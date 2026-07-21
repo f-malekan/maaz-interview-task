@@ -4,7 +4,7 @@ import PhoneIcon2 from "../icons/PhoneIcon2.vue";
 
 <template>
   <header
-    class="w-full py-10 rounded-b-4xl shadow-[0_2px_2px_rgba(0,0,0,0.08)]"
+    class="w-full bg-white py-10 rounded-b-4xl shadow-[0_2px_2px_rgba(0,0,0,0.08)]"
   >
     <div class="container mx-auto">
       <div class="grid grid-cols-6 items-center">
