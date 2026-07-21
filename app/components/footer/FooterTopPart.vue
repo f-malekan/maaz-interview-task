@@ -3,8 +3,7 @@ import { FOOTER_LINKS, SOCIAL_LINKS } from "~/constants/footer";
 </script>
 
 <template>
-  <footer class="bg-white shadow-[0_-2px_2px_rgb(0_0_0/4%)]">
-    <div class="pt-10 pb-11 rounded-t-2xl">
+    <div class="pt-10 pb-11 ">
       <div class="container">
         <div class="flex justify-between gap-10">
           <p class="text-gray-700 text-[13px] font-medium leading-6 mt-auto">
@@ -49,5 +48,4 @@ import { FOOTER_LINKS, SOCIAL_LINKS } from "~/constants/footer";
         </div>
       </div>
     </div>
-  </footer>
 </template>

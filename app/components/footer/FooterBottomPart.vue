@@ -8,7 +8,7 @@ import { SOCIAL_ICONS } from "~/constants/footer";
   >
     <div class="container">
       <div class="grid grid-cols-3 items-center">
-        <div></div>
+        <div />
 
         <div class="text-center">
           <p class="text-[13px] text-gray-700 leading-6 font-normal mb-4">
