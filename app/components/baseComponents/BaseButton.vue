@@ -29,7 +29,7 @@ const sizeClasses = {
 };
 
 defineEmits<{
-  (e: "click"): void;
+  click: [];
 }>();
 </script>
 
@@ -37,7 +37,7 @@ defineEmits<{
   <button
     :disabled="disabled"
     :class="[
-      'inline-flex items-center justify-center gap-2 transition-colors font-bold',
+      'inline-flex items-center justify-center gap-2 transition-colors font-bold cursor-pointer',
       variantClasses[variant],
       sizeClasses[size],
       disabled && 'cursor-not-allowed opacity-50',
