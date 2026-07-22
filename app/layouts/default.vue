@@ -2,10 +2,10 @@
 
 <template>
   <div>
-    <Header />
+    <Header class="mb-6"/>
     <main class="container">
       <slot />
     </main>
-    <Footer />
+    <Footer class="mt-9"/>
   </div>
 </template>
