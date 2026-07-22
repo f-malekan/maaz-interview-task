@@ -12,3 +12,9 @@ export interface ProductRateType {
   rate: number;
   count: number;
 }
+
+export interface AppliedFilterType {
+  slug: "cat" | "search" | "sort";
+  label: string;
+  icon: Component;
+}
