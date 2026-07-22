@@ -4,10 +4,14 @@ import LeftIcon from "~/components/icons/LeftIcon.vue";
 interface Props {
   title: string;
   image: string;
-  href?: string;
+  id: number;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const handleClick = () => {
+  navigateTo(`/products/${props.id}`);
+};
 </script>
 
 <template>
@@ -29,7 +33,7 @@ defineProps<Props>();
       variant="secondary"
       label="مشاهده جزئیات"
       :icon="LeftIcon"
+      @click="handleClick"
     />
- 
   </article>
 </template>
