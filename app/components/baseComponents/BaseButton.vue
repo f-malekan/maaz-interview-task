@@ -3,19 +3,25 @@ import type { Component } from "vue";
 
 withDefaults(
   defineProps<{
-    label: string;
+    label?: string;
     variant?: "primary" | "secondary";
     size?: "lg" | "md";
     icon?: Component;
+    iconOnly?: boolean;
     disabled?: boolean;
+    iconClass?: string;
   }>(),
   {
     variant: "primary",
     size: "lg",
+    iconOnly: false,
     disabled: false,
-    icon: undefined,
   },
 );
+
+const emit = defineEmits<{
+  click: [];
+}>();
 
 const variantClasses = {
   primary: "bg-primary text-white hover:bg-primary/90",
@@ -24,28 +30,36 @@ const variantClasses = {
 };
 
 const sizeClasses = {
-  md: "px-4 py-[10px] text-xs rounded-xl leading-6",
-  lg: "px-4 py-3 text-sm rounded-2xl leading-4",
+  md: "px-4 py-[10px] text-xs leading-6 rounded-xl",
+  lg: "px-4 py-3 text-sm leading-4 rounded-2xl",
 };
 
-defineEmits<{
-  click: [];
-}>();
+const iconOnlyClasses = "p-3 rounded-lg border border-primary bg-white";
 </script>
 
 <template>
   <button
     :disabled="disabled"
     :class="[
-      'inline-flex items-center justify-center gap-2 transition-colors font-bold cursor-pointer',
-      variantClasses[variant],
-      sizeClasses[size],
+      'inline-flex items-center justify-center transition-colors font-bold cursor-pointer',
+
+      iconOnly ? iconOnlyClasses : [variantClasses[variant], sizeClasses[size]],
+
+      !iconOnly && 'gap-2',
+
       disabled && 'cursor-not-allowed opacity-50',
     ]"
-    @click="$emit('click')"
+    @click="emit('click')"
   >
-    <span>{{ label }}</span>
+    <component
+      :is="icon"
+      v-if="icon"
+      class="size-4 shrink-0"
+      :class="iconClass"
+    />
 
-    <component :is="icon" v-if="icon" class="h-4 w-4" />
+    <span v-if="!iconOnly && label">
+      {{ label }}
+    </span>
   </button>
 </template>
