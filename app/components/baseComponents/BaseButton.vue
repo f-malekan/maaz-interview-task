@@ -51,15 +51,17 @@ const iconOnlyClasses = "p-3 rounded-lg border border-primary bg-white";
     ]"
     @click="emit('click')"
   >
-    <component
+ 
+
+    <span v-if="!iconOnly && label">
+      {{ label }}
+    </span>
+
+       <component
       :is="icon"
       v-if="icon"
       class="size-4 shrink-0"
       :class="iconClass"
     />
-
-    <span v-if="!iconOnly && label">
-      {{ label }}
-    </span>
   </button>
 </template>
