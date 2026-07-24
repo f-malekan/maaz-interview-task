@@ -63,6 +63,21 @@
   font-style: normal;
 }
 
+@layer components {
+  .card {
+    @apply bg-white rounded-3xl;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .section-title {
+    @apply text-xl leading-6 font-bold;
+  }
+
+  .filter-label {
+    @apply text-[13px] font-medium leading-4 text-gray-700;
+  }
+}
+
 body {
   font-family: "IRANYekan", sans-serif;
   background-color: #E9EDF5;

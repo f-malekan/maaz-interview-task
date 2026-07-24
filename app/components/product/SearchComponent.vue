@@ -14,7 +14,7 @@ const emit = defineEmits<{
 
 <template>
   <div class="bg-white p-4 rounded-3xl shadow-[0_2px_3px_rgb(0_0_0/3%)]">
-    <span class="text-gray-700 text-[13px] leading-4 font-medium"
+    <span class="filter-label"
       >فیلتر و جستجو</span
     >
     <BaseInput v-model="searchValue" class="my-4">

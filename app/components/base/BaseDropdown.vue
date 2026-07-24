@@ -16,7 +16,7 @@ const isOpen = ref(false);
       class="flex w-full items-center justify-between p-4"
       @click="isOpen = !isOpen"
     >
-      <span class="text-gray-700 text-[13px] leading-4 font-medium">
+      <span class="filter-label">
         {{ title }}
       </span>
 
