@@ -3,10 +3,10 @@ import { FOOTER_LINKS, SOCIAL_LINKS } from "~/constants/footer";
 </script>
 
 <template>
-    <div class="pt-10 pb-11 ">
+    <div class="pt-10 pb-11 lg:pb-11 md:pb-13 ">
       <div class="container">
-        <div class="flex justify-between gap-10">
-          <p class="text-gray-700 text-[13px] font-medium leading-6 mt-auto">
+        <div class="flex justify-between gap-10 flex-wrap md:flex-nowrap pt-29.75 px-6 md:pt-0 md:px-0">
+          <p class="text-gray-700 text-[13px] font-medium leading-6 mt-auto hidden md:block">
             هفت روز هفته از ۸ صبح تا ۱۲ شب پاسخگو هستیم
           </p>
 
@@ -19,7 +19,7 @@ import { FOOTER_LINKS, SOCIAL_LINKS } from "~/constants/footer";
               <li v-for="item in section.items" :key="item.label">
                 <NuxtLink
                   :to="item.href"
-                  class="text-gray-800 text-[13px] leading-6 font-medium hover:text-primary transition-colors"
+                  class="text-gray-800 text-[13px] block leading-6 font-medium hover:text-primary transition-colors"
                 >
                   {{ item.label }}
                 </NuxtLink>
