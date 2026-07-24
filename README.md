@@ -1,75 +1,64 @@
-# Nuxt Minimal Starter
+# Product Showcase
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A responsive product showcase built with **Nuxt 4**, **Vue 3**, **TypeScript**, and **Tailwind CSS**.
+
+## Features
+
+- Server-Side Rendering (SSR)
+- Responsive design (Mobile, Tablet, Desktop)
+- Product list
+- Product details page
+- Product search
+- Category filtering
+- Product sorting
+- Applied filters
+- Error state
+- Empty state
+
+## Tech Stack
+
+- Nuxt 4
+- Vue 3 (Composition API)
+- TypeScript
+- Tailwind CSS v4
 
 ## Setup
 
-Make sure to install dependencies:
+Install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## Development
 
-Start the development server on `http://localhost:3000`:
+Run the development server:
 
 ```bash
-# npm
 npm run dev
+```
 
-# pnpm
-pnpm dev
+The application will be available at:
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
+```
+http://localhost:3000
 ```
 
 ## Production
 
-Build the application for production:
+Build the application:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Preview the production build:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Notes
+
+- The original design uses the **Yekan Bakh** font. Since it is a commercial font, I used **Vazirmatn**, an open-source alternative with a similar visual style.
+- Product data is fetched from the Fake Store API.
